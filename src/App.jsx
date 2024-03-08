@@ -8,7 +8,8 @@ import Services from './components/Services'
 import Footer from './components/Footer'
 import Pricing from './components/Pricing'
 import Clients from './components/Clients'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
+
 
 
 
