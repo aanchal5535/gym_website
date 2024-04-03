@@ -1,27 +1,27 @@
 import React from 'react';
-import Dumbell from '../assests/dumbell.jpg'
+import Dumbell from '../assests/dumbell-removebg-preview.png'
 
 
 const data=[
   {id:1,
-  image:{Dumbell},
+  img:Dumbell,
   title: 'Strength Training' ,
   describe:' Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates delectus, voluptas autem consequuntur rem esse numquam asperiores quae, architecto expedita aut placeat eum sunt veniam vero culpa. Assumenda, libero rerum.'
   },
 {id:2,
- image:{Dumbell},
+ img:Dumbell,
   title: 'Basic Yoga',
   describe:' Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates delectus, voluptas autem consequuntur rem esse numquam asperiores quae, architecto expedita aut placeat eum sunt veniam vero culpa. Assumenda, libero rerum.'
   },
    
 {id:3,
- image:{Dumbell},
+ img:Dumbell,
   title: 'Body Building ',
   describe:' Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates delectus, voluptas autem consequuntur rem esse numquam asperiores quae, architecto expedita aut placeat eum sunt veniam vero culpa. Assumenda, libero rerum.'
   },
      
   {id:4,
-    image:{Dumbell},
+    img:Dumbell,
      title: 'Weight Loss ',
      describe:' Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates delectus, voluptas autem consequuntur rem esse numquam asperiores quae, architecto expedita aut placeat eum sunt veniam vero culpa. Assumenda, libero rerum.'
      },
@@ -43,11 +43,11 @@ const Programs = () => {
 
       <div className="grid grid-cols-4 gap-10 ">
         {
-          data.map(({id,image,title,describe})=>{
+          data.map(({id,img,title,describe})=>{
             return(
             <div key={id} className="border rounded-lg p-2 hover:bg-red-500">
           <div className="rounded-lg overflow-hidden flex items-center justify-center">
-            <img src={image} alt={title}/>
+            <img src={img} alt={title} className='w-[150px] h=[150px] bg-transparent'/>
           </div>
           <h3 className='text-xl font-bold py-5 text-center'>{title}</h3>
          <p className='text-lg font-semibold'>{describe}</p>

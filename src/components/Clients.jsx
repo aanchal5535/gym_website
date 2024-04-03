@@ -40,7 +40,7 @@ export default function Clients() {
     <h5 className='text-xl font-bold '>Review From clients</h5>
     <h2 className='text-lg font-semibold'>Testimonals</h2>
     
-      <Swiper className='w-[50%] pb-16 border-white'
+      <Swiper className='w-[50%] pb-16 border-white flex flex-col items-center justify-center'
        navigation={{clickable:true}}
        spaceBetween={40}
         modules={[Navigation]} 
@@ -49,8 +49,8 @@ export default function Clients() {
         data.map(({avatar,name,review},index)=>{
             return (
                 <SwiperSlide  key={index}className="text-center p-16 rounded-xl   border-2 ">
-                  <div className="w-16 aspect-auto overflow-hidden rounded-[50%] ">
-                    <img src={avatar} alt='Avatar'/>
+                  <div className="w-24 aspect-auto overflow-hidden rounded-[50%] ">
+                    <img src={avatar} alt='Avatar' />
       
                   </div>
                   <h5 className="text-xl p-5">{name}</h5>
